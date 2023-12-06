@@ -1,0 +1,277 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Fastbank",
+    "dateExported": "2023-11-27T17:49:49.524Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a12b2fdb-78fb-4907-b17f-04e726a36a65",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://127.0.0.1:8000/api/token/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-27T17:05:54.256Z",
+            "modified": "2023-11-27T17:05:54.256Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"admin@admin.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9be66d57-8f08-464f-8a57-c1372c7d4bb3",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "New Account",
+            "url": "http://127.0.0.1:8000/api/v1/accounts/",
+            "method": "POST",
+            "sortNum": 12500,
+            "created": "2023-11-27T17:13:07.572Z",
+            "modified": "2023-11-27T17:14:21.970Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4523c010-08f3-499b-85c7-40e0c454a2c4",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "Create user",
+            "url": "http://127.0.0.1:8000/api/v1/user/create",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-11-27T17:08:41.237Z",
+            "modified": "2023-11-27T17:09:10.266Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"email\": \"user@example.com\",\r\n  \"password\": \"string\",\r\n  \"first_name\": \"string\",\r\n  \"last_name\": \"string\",\r\n  \"cpf\": \"string\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e5f3d348-f031-48a8-8409-624c42932ee3",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "user me",
+            "url": "http://127.0.0.1:8000/api/v1/user/me/",
+            "method": "PATCH",
+            "sortNum": 18750,
+            "created": "2023-11-27T17:12:15.843Z",
+            "modified": "2023-11-27T17:48:06.246Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8c302712-6b54-48fa-97d7-4d7a3750f0db",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "user me",
+            "url": "http://127.0.0.1:8000/api/v1/user/me/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-27T17:06:41.077Z",
+            "modified": "2023-11-27T17:11:07.510Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6daa24ad-2850-4af4-96ce-e4dedee4d068",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "All Account",
+            "url": "http://127.0.0.1:8000/api/v1/accounts/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-27T17:14:36.554Z",
+            "modified": "2023-11-27T17:15:01.985Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "61438632-8f78-4fac-9489-f1c2ad3a4431",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "Single Account",
+            "url": "http://127.0.0.1:8000/api/v1/accounts/{id}/",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-11-27T17:15:33.537Z",
+            "modified": "2023-11-27T17:46:18.485Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0c966103-a841-40b5-aae9-50b430d1687d",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "Update Account",
+            "url": "http://127.0.0.1:8000/api/v1/accounts/{id}/",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2023-11-27T17:16:14.897Z",
+            "modified": "2023-11-27T17:39:19.950Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "226c2965-90eb-46a6-a324-bff0eef6c14f",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "Deposit",
+            "url": "http://127.0.0.1:8000/api/v1/accounts/{id}/deposit/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-11-27T17:18:59.561Z",
+            "modified": "2023-11-27T17:19:25.176Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "3",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"value\": \"10.0\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c7e0a005-b2b1-4079-991a-7ba2c68391dd",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "Withdraw",
+            "url": "http://127.0.0.1:8000/api/v1/accounts/{id}/withdraw/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-11-27T17:19:40.121Z",
+            "modified": "2023-11-27T17:20:05.207Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "3",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"value\": \"10.0\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "22e268ab-fde6-4dac-a40f-e485126ed1a4",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "Transfer",
+            "url": "http://127.0.0.1:8000/api/v1/transfer/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-11-27T17:20:41.006Z",
+            "modified": "2023-11-27T17:28:22.347Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"value\": \"1\",\n  \"sender\": 2,\n  \"receiver\": 1,\n  \"description\": \"batatão vc\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3ca24d98-a9f4-44af-83ea-4fc5137c983f",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "Transfer",
+            "url": "http://127.0.0.1:8000/api/v1/transfer/",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-11-27T17:21:53.390Z",
+            "modified": "2023-11-27T17:22:10.354Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6fd4b5e1-1e4c-44d4-bbdd-caede367d132",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "Loan",
+            "url": "http://127.0.0.1:8000/api/v1/loan/",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-11-27T17:23:15.414Z",
+            "modified": "2023-11-27T17:23:31.643Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d3eb429f-a56b-4f08-986a-8019ea6daf9a",
+            "colId": "257868f8-2076-4fe2-b23f-b1b0a66619cf",
+            "containerId": "",
+            "name": "Loan",
+            "url": "http://127.0.0.1:8000/api/v1/loan/",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-11-27T17:23:34.574Z",
+            "modified": "2023-11-27T17:23:34.574Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxMTA4MzgxLCJpYXQiOjE3MDExMDQ3ODEsImp0aSI6ImQ1MDIzOTdhZmU4ZTQ3NGU4NzIzY2ZlZDYyYjk1YjEwIiwidXNlcl9pZCI6MX0._ZIXOzuz99hNkXK0U2IXh0jZBN7mYanq_pC6pZQCLvA"
+        }
+    }
+}
