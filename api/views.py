@@ -262,7 +262,7 @@ class CreditViewSet(generics.ListCreateAPIView):
         value = decimal.Decimal(request.data.get("value"))
         installments = request.data.get("installments")
 
-        max_value = 1000
+        max_value = 10000
         min_installments = 1
 
         if value > max_value:
