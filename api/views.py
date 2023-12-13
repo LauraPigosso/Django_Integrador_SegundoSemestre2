@@ -203,9 +203,9 @@ class LoanViewSet(generics.ListCreateAPIView):
         # Criação de um novo empréstimo
         account = request.data.get("account")
         value = decimal.Decimal(request.data.get("value"))
-        installments = request.data.get("installments")
+        installments = int(request.data.get("installments"))
 
-        min_value = 1000
+        min_value = 100
         min_installments = 1
         
         if value <= min_value:
@@ -260,7 +260,7 @@ class CreditViewSet(generics.ListCreateAPIView):
         # Criação de um novo crédito (compra a prazo)
         account = request.data.get("account")
         value = decimal.Decimal(request.data.get("value"))
-        installments = request.data.get("installments")
+        installments = int(request.data.get("installments"))
 
         max_value = 10000
         min_installments = 1
